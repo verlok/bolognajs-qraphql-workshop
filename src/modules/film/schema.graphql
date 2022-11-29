@@ -1,9 +1,15 @@
 type Query {
-  getFilmList(limit: Int): [Film]
+  getFilmList(input: FilmListInput): [Film]
+}
+
+input FilmListInput {
+  page: Int
+  resultPerPage: Int
 }
 
 type Film {
-  id: ID
-  title: String
-  description: String
+  id: ID!
+  title: String!
+  description: String!
+  categories: [Category]
 }
