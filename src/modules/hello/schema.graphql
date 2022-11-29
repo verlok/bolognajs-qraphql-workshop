@@ -1,12 +1,4 @@
 type Query {
   hello(name: String!): String
   add(num1: Int!, num2: Int): Int
-
-  getFilmList(limit: Int): [Film]
-}
-
-type Film {
-  id: ID
-  title: String
-  description: String
 }
