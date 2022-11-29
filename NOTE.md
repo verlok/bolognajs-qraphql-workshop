@@ -23,3 +23,14 @@ Q: Get film list con parametri
 }
 ```
 
+Q: Get film con parametro complesso
+
+```gql
+{
+  getFilmList(input:{page: 1, resultPerPage: 10}) {
+    id
+    title
+    description
+  }
+}
+```
