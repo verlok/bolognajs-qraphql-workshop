@@ -2,7 +2,7 @@ type Query {
   hello(name: String!): String
   add(num1: Int!, num2: Int): Int
 
-  getFilmList: [Film]
+  getFilmList(limit: Int): [Film]
 }
 
 type Film {
